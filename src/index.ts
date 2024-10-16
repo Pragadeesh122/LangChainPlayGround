@@ -19,6 +19,9 @@ const promptTemplate = ChatPromptTemplate.fromMessages([
 const llmChain = promptTemplate.pipe(model).pipe(parser);
 
 (async () => {
-  const result = await llmChain.invoke({language: "italian", text: "hi"});
+  const result = await llmChain.invoke({
+    language: "tamil",
+    text: "Hello, how are you?",
+  });
   console.log(result);
 })();
