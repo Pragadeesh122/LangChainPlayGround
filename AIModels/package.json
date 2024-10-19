@@ -4,17 +4,22 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "tsc -b && node dist/RAG/rag.js"
+    "start": "tsc -b && node dist/RAG/rag.js",
+    "backend": "tsc -b && node dist/ImageGeneratorBackend/index.js"
   },
   "dependencies": {
     "@langchain/community": "^0.3.6",
     "@langchain/core": "^0.3.11",
     "@langchain/langgraph": "^0.2.15",
     "@langchain/openai": "^0.3.11",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
     "axios": "^1.7.7",
     "cheerio": "^1.0.0",
+    "cors": "^2.8.5",
     "crawlee": "^3.11.5",
     "dotenv": "^16.4.5",
+    "express": "^4.21.1",
     "langchain": "^0.3.2",
     "typescript": "^5.6.3",
     "uuid": "^10.0.0"
